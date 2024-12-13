@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 export default function Footer (){
 
         return (
-            <footer className="bg-[#002349] py-6 min-h-screen">
-                <div className="bg-lightblue mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <footer className="fixed bottom-0 bg-[#002349] py-500">
+                <div className="fixed bottom-5 bg-lightblue mx-auto w-full max-w-screen-xl pl-[190px] lg:py-8">
                     {/* <div className="md:flex md:justify-between">
                        
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         </div>
                     </div> */}
                     <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-                    <div className="sm:flex sm:items-center sm:justify-between">
+                    <div className="flex gap-[700px] sm:flex sm:items-center sm:justify-between flex flex-col sm:flex-row">
                         <span className="text-sm text-gray-500 sm:text-center text-white">
                             © 2025 . 
                             <a href="https://github.com/soham408" className=" font-serif hover:underline">
@@ -20,7 +20,7 @@ export default function Footer (){
                             </a>
                             . All Rights Reserved.
                         </span>
-                        <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                        <div className="flex space-x-5 sm:justify-center sm:mt-0">
                         <Link to="https://github.com/soham408">
                                 <svg
                                     className=" w-[30px] h-[30px] transform hover:rotate-45 transition duration-300 h-full"
