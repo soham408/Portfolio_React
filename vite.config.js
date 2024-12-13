@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      base: '/Portfolio_React/'
+      base: '/Portfolio_React/src/main.jsx'
 ,
     },
   },
