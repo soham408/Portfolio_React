@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path';
 
 
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -10,8 +11,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
       // base: '/Portfolio_React/src/main.jsx'
-      base: '/Portfolio_React/'
-,
+      base: '/Portfolio_React/',
     },
   },
 })
