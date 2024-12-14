@@ -5,20 +5,24 @@ export default function Footer (){
 
         return (
             
-            <footer className="fixed bottom-0 w-full left-0 text-white p-4 flex justify-between items-center gap-4 ">
-           {/* fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-between items-center gap-4 */}
+            <footer className="fixed bottom-0 w-full left-0 text-white p-4 flex justify-between items-center 
+             
+            ">
+           
                 <div className="text-sm ">
-                    <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-                   
-                    <div className=" flex space-x-4 mt-2 sm:mt-0">
-                        <span className="text-sm text-gray-500 sm:text-center text-white">
+                    <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 " />
+                  
+                    <div className="">
+                        <span className="">
+                        
                             © 2025 . 
                             <a href="https://github.com/soham408" className=" font-serif hover:underline">
                                  SohamBambade
                             </a>
                             . All Rights Reserved.
                         </span>
-                        <div className="flex space-x-4">
+                        <div className="pl-[1250px] flex space-x-4">
+                        
                         <Link to="https://github.com/soham408">
                                 <svg
                                     className=" w-[30px] h-[30px] transform hover:rotate-45 transition duration-300 h-full"
