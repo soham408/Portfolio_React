@@ -12,11 +12,11 @@ import { TypeAnimation } from 'react-type-animation'
                   <div className='grid place-content-center p-[12%]'>
                         <TypeAnimation
                         sequence={[
-                              "I am Web Developer",
+                              "I Am A Web Developer",
                               1000,
-                              "I am Software Developer",
+                              "I Am A Software Developer",
                               1000,
-                              "I am Tech Enthusiast",
+                              "I Am A Tech Enthusiast",
                               1000     
                         ]}
                         wrapper="span"
