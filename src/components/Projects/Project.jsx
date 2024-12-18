@@ -1,11 +1,19 @@
 import React from 'react';
+import Transition from '../Transition'; 
+import { motion } from 'framer-motion';
+
 
 function Projects(){
     document.body.style.color = '#ffffff';
 
     return (
         <>
-        <div>
+        <motion.div
+        initial = {{ y: "100%" }}
+        animate = {{ y: 0 }}
+        exit={{ y: "-100%"}}
+        transition={{ duration: 0.5, }}
+        >
         <ul>
         <h1 className='text-white text-6xl font-serif text-center pt-[169px]  '>Projects</h1>
 
@@ -29,9 +37,9 @@ function Projects(){
                 </div>
             </li>
         </ul>
-        </div>
+        </motion.div>
         </>
     )
 }
 
-export default Projects;
+export default Transition(Projects);

@@ -1,9 +1,17 @@
 import React from 'react'
+import Transition from '../Transition';
+import { motion } from 'framer-motion';
+
 
 function Techskills() {
     return (
         
-        <div>
+        <motion.div
+        initial = {{ y: "100%" }}
+        animate = {{ y: 0 }}
+        exit={{ y: "-100%"}}
+        transition={{ duration: 0.5, }}
+        >
             <ul>
                 <h1 className='text-white text-6xl font-serif text-center pt-[100px]  '>Technical Skills</h1>
                 <li className='flex space-x-6 justify-center pt-[178px] pb-[100px]'>
@@ -47,10 +55,10 @@ function Techskills() {
                             
                 </li>
             </ul>
-            </div>
+            </motion.div>
         
       
 )
 }
 
-export default Techskills;
+export default Transition(Techskills);

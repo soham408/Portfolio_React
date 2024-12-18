@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
+import Transition from '../Transition'; 
+
+
 
 function Github() {
   const data = useLoaderData()
@@ -31,7 +35,12 @@ function Github() {
       <img className='rounded-xl w-[220px] m-6' src={data.avatar_url} alt="Git Image"  />
       </div>
       </div>  */}
-      <div className='pt-[20%]'>
+      <motion.div 
+      initial = {{ y: "100%" }}
+      animate = {{ y: 0 }}
+      exit={{ y: "-100%"}}
+      transition={{ duration: 0.5, }}
+      className='pt-[20%]'>
         <div className='flex items-center'>
       <figure className="md:flex bg-slate-500 rounded-xl p-8 md:p-0 dark:bg-slate-800 mx-auto w-1/1">
   <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto " src={data.avatar_url} alt="" width="384" height="512"/>
@@ -50,7 +59,7 @@ function Github() {
   </div>
 </figure> 
 </div>
-</div>
+</motion.div>
  </>
   )
  }

@@ -1,6 +1,9 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation'
-// import imgHome from './Images/HomeComponent.png'
+
+import Transition from '../Transition'; 
+import { motion } from 'framer-motion';
+
 
 
  function Home(){
@@ -8,7 +11,12 @@ import { TypeAnimation } from 'react-type-animation'
         
             <>
             
-                  <div className='text-white font-serif '>
+                  <motion.div 
+                  initial = {{ y: "100%" }}
+                  animate = {{ y: 0 }}
+                  exit={{ y: "-100%"}}
+                  transition={{ duration: 0.5, }}
+                  className='text-white font-serif '>
                   <div className='grid place-content-center p-[12%]'>
                         <TypeAnimation
                         sequence={[
@@ -25,7 +33,7 @@ import { TypeAnimation } from 'react-type-animation'
                         repeat={Infinity}
                         />
                   </div>
-                  </div>
+                  </motion.div>
                   {/* <div className=''>
                         <h1 className='text-[#F1FAEE] grid place-items-center pt-[20%] pb-[4%] text-9xl font-serif animate-bounce animate-slidein300'>WELCOME</h1>
 
@@ -44,4 +52,4 @@ import { TypeAnimation } from 'react-type-animation'
 
 }
 
-export default Home;
+export default Transition(Home);

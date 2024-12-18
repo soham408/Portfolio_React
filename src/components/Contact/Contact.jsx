@@ -1,9 +1,17 @@
 import React from 'react';
+import Transition from '../Transition'; 
+import { motion } from 'framer-motion';
+
 
 function Contact (){
     return (
         <>
-       <div className='pl-[28px]'>
+        
+       <motion.div
+        initial = {{ y: "100%" }}
+        animate = {{ y: 0 }}
+        exit={{ y: "-100%"}}
+        transition={{ duration: 0.5, }} className='pl-[28px]'>
         <div className='pt-[30px] place-items-center'>
 
         <div className='p-7 bg-gray-250 sm:rounded-lg'>
@@ -49,9 +57,14 @@ function Contact (){
         
 
         </div>
-        </div>
+        </motion.div>
         
-        <form className="p-6 flex flex-col justify-center flex items-center mt-8 text-gray-600">
+        <motion.form 
+        initial = {{ y: "100%" }}
+        animate = {{ y: 0 }}
+        exit={{ y: "-100%"}}
+        transition={{ duration: 0.5, }}
+        className="p-6 flex flex-col justify-center flex items-center mt-8 text-gray-600">
                 <div className="flex flex-col w-[500px]">
                  <label for="name" className="hidden font-serif">
                                     Full Name
@@ -97,9 +110,10 @@ function Contact (){
                             >
                                 Submit
                             </button>
-                        </form>
+                        </motion.form>
+                        
         </>
     )
 }
 
-export default Contact;
+export default Transition(Contact);
