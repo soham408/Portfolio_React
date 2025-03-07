@@ -59,6 +59,7 @@ const RootComponent = () => {
   const location = useLocation();
 
   return (
+
     <div className="App">
       
       <AnimatePresence mode="wait">

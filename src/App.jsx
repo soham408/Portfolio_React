@@ -16,28 +16,7 @@ import {Routes} from 'react-router-dom';
 function App() {
   
   return (
-   <html lang="en">
-   <head>
-
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYH237JSNG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YYH237JSNG');
-</script>
-
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-   </head>
-   <body>
-    
-   </body>
-   </html>
+  <></>
   )
 }
 
